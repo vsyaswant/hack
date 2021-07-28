@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+   <head>
+      <title>NCR SSCO RemoteAssitance</title>
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src='https://8x8.vc/external_api.js' async></script>
+        <style>html, body, #jaas-container { height: 100%; }</style>
+        <script type="text/javascript">
+          window.onload = () => {
+            const api = new JitsiMeetExternalAPI("8x8.vc", {
+              roomName: "vpaas-magic-cookie-8f4b326f86ee407c954e270aa7fab4b6/SampleAppCapitalDemandsCampClosely",
+              parentNode: document.querySelector('#jaas-container')
+            });
+          }
+        </script>
+      <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font: 400 15px/1.8 "Lato", sans-serif;
+          
+        }
+        
+        .bgimg-1{
+           position: relative;
+           opacity: 0.65;
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-image: url("https://jobs.cybertecz.in/wp-content/uploads/2019/12/DPA_NCRHeadqrts_05-1100x763.jpg");
+           height: 100%;
+           color: #777;
+        }
+        
+        h1 {
+          color: #000000;
+        }
+        </style>
+   </head>
+	
+   <body>
+    <div class="bgimg-1">
+        <img src = "NCRLogo.png" alt = "Test Image" />
+        <h1>NCR Self Serv CheckOut Remote Assistance</h1>
+        <div id="jaas-container" />
+	</div>	
+     
+   </body>
+</html>
